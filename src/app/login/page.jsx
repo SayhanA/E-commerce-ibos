@@ -105,7 +105,7 @@ const Login = () => {
                   disabled={isSubmitting || !values.terms}
                   className="px-[20px] py-[14px] border-[#D9D9D9] flex gap-2 items-center justify-center bg-black text-white font-bold hover:bg-transparent hover:text-black disabled:bg-gray-400 disabled:cursor-not-allowed disabled:text-white transition-all"
                 >
-                  Submit
+                  Sign in
                 </Button>
               </Form>
             )}
@@ -129,7 +129,7 @@ const Login = () => {
 
           <div className="flex gap-2 justify-center mt-5 w-full ">
             <Text>Have an account?</Text>
-            <Link href="/" className="text-[#0F3DDE]">
+            <Link href="/signup" className="text-[#0F3DDE]">
               Sign Up
             </Link>
           </div>
