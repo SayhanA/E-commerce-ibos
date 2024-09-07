@@ -14,9 +14,11 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import SText from "@/Components/atoms/SText";
 import { IoEye, IoEyeOffSharp } from "react-icons/io5";
 import { useState } from "react";
+import { useRouter } from 'next/navigation';
 
 const Login = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const router = useRouter();
 
   return (
     <div className="md:flex h-screen transition-all">
@@ -46,7 +48,8 @@ const Login = () => {
             }}
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
+                // alert(JSON.stringify(values, null, 2));
+                router.push('/dashboard/products');
                 setSubmitting(false);
               }, 400);
             }}

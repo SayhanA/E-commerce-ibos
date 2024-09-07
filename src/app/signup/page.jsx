@@ -14,8 +14,10 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import SText from "@/Components/atoms/SText";
 import { IoEye, IoEyeOffSharp } from "react-icons/io5";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const SignUp = () => {
+  // const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
 
   return (
@@ -44,6 +46,7 @@ const SignUp = () => {
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
                 alert(JSON.stringify(values, null, 2));
+                // router.push('/dashboard/products');
                 setSubmitting(false);
               }, 400);
             }}
