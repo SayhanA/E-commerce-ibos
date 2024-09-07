@@ -64,7 +64,7 @@ const NavBar = () => {
           <IoMenuOutline className="text-3xl" />
         </button>
 
-        <Link href='/login' className="py-3 px-5 rounded-[6px] bg-black text-white border-black hover:bg-transparent hover:text-black border-2 font-bold">Login</Link>
+        <Link href='/login' className={`py-3 px-5 rounded-[6px] bg-black text-white border-black hover:bg-transparent hover:text-black border-2 font-bold ${urlPath === '/' ? "" : "hidden    "}`}>Login</Link>
         
       </div>
       <div
