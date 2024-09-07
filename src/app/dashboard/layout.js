@@ -1,8 +1,12 @@
-import { Inter } from "next/font/google";
+import { Inter, Barlow } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import BaseLayout from "../baseLayout";
+import BaseLayout from "./baseLayout";
+import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
+const barlow = Barlow({
+  weight: "400",
+  preload: false,
+});
 
 export const metadata = {
   title: "E-commerce iBOS",
@@ -10,10 +14,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={barlow.className}>
         <Toaster position="top-center" reverseOrder={false} />
         <BaseLayout>{children}</BaseLayout>
       </body>

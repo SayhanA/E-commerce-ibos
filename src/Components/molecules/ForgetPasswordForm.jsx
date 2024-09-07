@@ -89,7 +89,7 @@ const ForgetPasswordForm = ({ className = "" }) => {
 
         <div className="text-center mt-5 text-[#0e194d]">
           Already have an account?{" "}
-          <Link href="/" className="text-blue-500 font-bold">
+          <Link href="/login" className="text-blue-500 font-bold">
             Log in
           </Link>
         </div>
