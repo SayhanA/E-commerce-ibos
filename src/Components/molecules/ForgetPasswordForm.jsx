@@ -25,7 +25,7 @@ const ForgetPasswordForm = ({ className = "" }) => {
   const handleSubmit = (values) => {
     const filteredValues = { email: values.email };
     console.log({ filteredValues });
-    router.push("/signup"); // This is client-side navigation
+    router.push(`/otp-confirmation?email=${values.email}`);
   };
 
   useEffect(() => {

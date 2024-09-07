@@ -89,7 +89,7 @@ const Login = () => {
                   component="div"
                 />
 
-                <Link href="/" className="text-[#1E99F5] ml-auto ">
+                <Link href="/forgot-password" className="text-[#1E99F5] ml-auto ">
                   Forgot Password
                 </Link>
 

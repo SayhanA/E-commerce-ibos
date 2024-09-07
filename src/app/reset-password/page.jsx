@@ -10,7 +10,7 @@ import Image from "next/image";
 const Page = () => {
   return (
     <div className="w-full flex h-screen">
-      <div className="w-[50%] h-full">
+      <div className="md:w-[50%] h-full w-full">
         <ResetPasswordForm className="col-span-1 max-md:col-span-2 px-4" />
       </div>
       <div className="relative w-[50%] h-full md:block hidden">

@@ -11,11 +11,11 @@ import Image from "next/image";
 const Page = () => {
   return (
     <div className="w-full flex h-screen">
-      <div className="w-[50%] h-full">
-	  <ForgetPasswordForm className="col-span-1 max-md:col-span-2 px-4" />
+      <div className="md:w-[50%] h-full w-full">
+        <ForgetPasswordForm className="col-span-1 max-md:col-span-2 px-4" />
       </div>
       <div className="relative w-[50%] h-full md:block hidden">
-        <Image	
+        <Image
           src={chair}
           alt="Picture of the author"
           className="w-full h-full absolute"
