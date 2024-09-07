@@ -7,21 +7,21 @@ export const navbarMenu = [
   {
     id: 2832,
     title: "Products",
-    path: "/products",
+    path: "/dashboard/products",
   },
   {
     id: 2833,
     title: "Categories",
-    path: "/categories",
+    path: "/dashboard/categories",
   },
   {
     id: 2835,
     title: "Custom",
-    path: "/custom",
+    path: "/dashboard/custom",
   },
   {
     id: 2836,
     title: "Blog",
-    path: "/blog",
+    path: "/dashboard/blog",
   },
 ];

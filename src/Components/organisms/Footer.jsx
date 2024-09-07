@@ -11,10 +11,10 @@ import MText from "../atoms/MText";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0E0E0E] pt-[60px] absolute bottom-0 w-full px-5">
+    <footer className="bg-[#0E0E0E] sm:pt-[60px] pt-3 w-full px-5">
       <div className="container mx-auto flex justify-between flex-wrap">
-        <NabIcon white className="mb-10" />
-        <div className="flex xl:flex-nowrap flex-wrap md:gap-32 xs:gap-10 gap-5 md:justify-end text-white">
+        <NabIcon white className="xl:mb-10 mb-5" />
+        <div className="flex xl:flex-nowrap flex-wrap md:gap-32 xs:gap-10 gap-3 md:justify-end text-white">
           {footerMenu.sections.map((section) => (
             <div key={section.title}>
               <h3 className="text-lg font-bold mb-4 text-white">
@@ -44,7 +44,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="container mx-auto pt-10 border-0 border-t border-t-[#252948] mt-[100px]">
+      <div className="container mx-auto xs:pt-10 border-0 border-t border-t-[#252948] sm:mt-[100px] mt-5">
         <div className="justify-between flex flex-wrap">
           <div className="flex gap-[11px]">
             <FBSVG />
@@ -63,7 +63,7 @@ const Footer = () => {
             <Text className="text-[#81859F]">United States (English)</Text>
           </div>
         </div>
-        <MText className="text-[#323544] text-center my-[32px]">EEVE © 2024. All rights reserved.</MText>
+        <MText className="text-[#323544] text-center py-[32px]">EEVE © 2024. All rights reserved.</MText>
       </div>
     </footer>
   );
